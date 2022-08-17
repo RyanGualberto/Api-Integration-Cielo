@@ -24,7 +24,6 @@ app.get("/produtos", (req, res) => {
     })
     .then(function (response) {
       // manipula o sucesso da requisição
-      console.log(response.data);
       res.send(response.data);
     })
     .catch(function (error) {
